@@ -1,12 +1,12 @@
 %{?_javapackages_macros:%_javapackages_macros}
-%global tag cbi-plugins-1.0.5
+%global tag cbi-plugins-1.1.1
 
 Name:           cbi-plugins
-Version:        1.0.5
-Release:        2.0%{?dist}
+Version:        1.1.1
+Release:        1%{?dist}
 Summary:        A set of helpers for Eclipse CBI
 
-
+Group:          System/Libraries
 License:        EPL
 URL:            http://git.eclipse.org/c/cbi/org.eclipse.cbi.maven.plugins.git/
 Source0:        http://git.eclipse.org/c/cbi/org.eclipse.cbi.maven.plugins.git/snapshot/%{tag}.tar.bz2
@@ -23,7 +23,7 @@ Requires:       jpackage-utils
 A set of helpers for Eclipse CBI.
 
 %package javadoc
-
+Group:          Documentation
 Summary:        Javadoc for %{name}
 Requires:       jpackage-utils
 
@@ -46,6 +46,15 @@ API documentation for %{name}.
 %files javadoc -f .mfiles-javadoc
 
 %changelog
+* Mon Jul 28 2014 Roland Grunberg <rgrunber@redhat.com> - 1.1.1-2
+- Update to 1.1.1 Release.
+
+* Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* Fri Mar 28 2014 Michael Simacek <msimacek@redhat.com> - 1.0.5-3
+- Use Requires: java-headless rebuild (#1067528)
+
 * Wed Nov 13 2013 Alexander Kurtakov <akurtako@redhat.com> 1.0.5-2
 - Disable win/mac signers.
 
@@ -72,3 +81,4 @@ API documentation for %{name}.
 
 * Thu Feb 21 2013 Krzysztof Daniel <kdaniel@redhat.com> 1.0.1-0.1.git120561
 - Initial contribution.
+
