@@ -8,7 +8,7 @@ Summary:        A set of helpers for Eclipse CBI
 
 Group:          System/Libraries
 License:        EPL
-URL:            http://git.eclipse.org/c/cbi/org.eclipse.cbi.maven.plugins.git/
+URL:            https://git.eclipse.org/c/cbi/org.eclipse.cbi.maven.plugins.git/
 Source0:        http://git.eclipse.org/c/cbi/org.eclipse.cbi.maven.plugins.git/snapshot/%{tag}.tar.bz2
 BuildArch:      noarch
 
